@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+#header-contents {
+  color: #ffffff;
+  background-color: #222222;
+  overflow: hidden;
+  height: 100px;
+  width: 100vw;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+#header-left {
+  display: flex;
+  align-items: center;
+}
+
+#header-right {
+  display: flex;
+  align-items: center;
+}
+
+#header-right ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+#header-right ul li {
+  margin-right: 15px;
+}
+
+#header-right ul li:last-child {
+  margin-right: 0;
+}
+
+#header-link {
+  float: right;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+#corp_msgs {
+  padding-top: 100px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#corp_msg1,
+#corp_msg2,
+#corp_msg3 {
+  overflow: hidden;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#corp_msg1 {
+  color: white;
+  background-image: url(../images/ian-dooley-DJ7bWa-Gwks-unsplash.jpg);
+  background-size: cover;
+}
+
+#corp_msg2 {
+  color: black;
+  background-image: url(../images/kobu-agency-7okkFhxrxNw-unsplash.jpg);
+  background-size: cover;
+}
+
+#work {
+  color: #565656;
+  overflow: hidden;
+  background-color: transparent; /* cornflowerblue */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.work_container {
+  padding: 15px;
+}
+
+.work_case {
+  background: #f8f8f9;
+  border: 1px solid rgba(232, 232, 232, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 58px 40px 40px;
+}
+
+#about {
+  background-color: #f8f8f9;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#detail {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+#detail-contents {
+  text-align: right;
+  margin-right: 15px;
+}
+
+#detail-img {
+  background-image: url(../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#news {
+  overflow: hidden;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#news h1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+}
+.news_article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+#voice {
+  overflow: hidden;
+  background-color: #018484;
+  color: white;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.voice_case {
+  text-align: center;
+}
+
+#copyright {
+  overflow: hidden;
+  background-color: #3e4444;
+  color: #cccccc;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#copyright p {
+  text-align: center;
+}
+.slick-slide:focus {
+  outline: none;
+}
